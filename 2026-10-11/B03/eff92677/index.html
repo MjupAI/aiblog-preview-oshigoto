@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>「文字起こし」ってどんな仕事？</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #F5F8FC;
+  color: #1F2A44;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  overflow-wrap: anywhere;
+}
+a { color: #1D4FC4; text-decoration: none; }
+
+/* ヘッダー */
+.site-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #DCE3EE;
+}
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.site-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1F2A44;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header-nav a.nav-link {
+  color: #1F2A44;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.btn {
+  display: inline-block;
+  background: #1D4FC4;
+  color: #FFFFFF;
+  border-radius: 999px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+.header-nav .btn {
+  padding: 8px 22px;
+  font-size: 16px;
+}
+
+/* 台紙 */
+main {
+  padding: 32px 16px 48px;
+}
+.sheet {
+  max-width: 880px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #DCE3EE;
+  padding: 40px 40px 48px;
+}
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+.label {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 2px 14px;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 700;
+}
+.label-type {
+  background: #1D4FC4;
+  color: #FFFFFF;
+  border: 1px solid #1D4FC4;
+}
+.label-work {
+  background: #FFFFFF;
+  color: #1F2A44;
+  border: 1px solid #DCE3EE;
+}
+h1 {
+  margin: 0 0 16px;
+  font-size: 30px;
+  line-height: 1.5;
+  color: #1F2A44;
+}
+.lead {
+  margin: 0 0 32px;
+  color: #4A5672;
+}
+h2.subhead {
+  margin: 0 0 16px;
+  padding: 2px 0 8px 14px;
+  border-left: 4px solid #2F6FEB;
+  border-bottom: 1px solid #DCE3EE;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #1F2A44;
+}
+.body-text {
+  margin: 0 0 24px;
+}
+.figure {
+  margin: 0 0 32px;
+}
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* まとめの箱 */
+.summary {
+  background: #EAF1FE;
+  border-radius: 16px;
+  padding: 24px 28px 28px;
+  margin: 0 0 40px;
+}
+.summary-title {
+  margin: 0 0 8px;
+  color: #1D4FC4;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.summary p {
+  margin: 0 0 16px;
+}
+.summary .btn {
+  padding: 12px 28px;
+  font-size: 16px;
+}
+
+/* あわせて読みたい */
+h2.related-title {
+  margin: 0 0 8px;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #1F2A44;
+}
+.related-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.related-list li {
+  border-bottom: 1px solid #DCE3EE;
+}
+.related-list a {
+  display: block;
+  padding: 8px 0 8px 1.2em;
+  position: relative;
+  line-height: 1.7;
+}
+.related-list a::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #1D4FC4;
+  font-weight: 700;
+}
+
+/* フッター */
+.site-footer {
+  background: #FFFFFF;
+  border-top: 1px solid #DCE3EE;
+}
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 20px 28px;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+  margin-bottom: 12px;
+}
+.footer-nav .site-name { font-size: 18px; }
+.footer-nav a.nav-link {
+  color: #1F2A44;
+  line-height: 1.8;
+}
+.footer-small {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #4A5672;
+}
+
+/* スマホ */
+@media (max-width: 600px) {
+  .header-inner { padding: 10px 16px; }
+  .header-nav a.nav-link { display: none; }
+  main { padding: 16px 12px 32px; }
+  .sheet { padding: 24px 18px 32px; }
+  h1 { font-size: 24px; }
+  h2.subhead { font-size: 20px; }
+  .summary { padding: 20px 18px 24px; }
+  .summary .btn { display: block; width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-name" href="#">お仕事創る</a>
+    <nav class="header-nav">
+      <a class="nav-link" href="#">記事一覧</a>
+      <a class="nav-link" href="#">業務から探す</a>
+      <a class="btn" href="#">相談</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="sheet">
+    <ul class="labels">
+      <li class="label label-type">用語の説明</li>
+      <li class="label label-work">文字起こし</li>
+    </ul>
+
+    <h1>「文字起こし」ってどんな仕事？</h1>
+    <p class="lead">このブログでよく出てくる「文字起こし」という言葉を、短く説明します。</p>
+
+    <h2 class="subhead">文字起こしの仕事</h2>
+    <p class="body-text">会議や話し合いの音声を聞いて、話された言葉を文字にしていく仕事です。介護の現場では、会議の記録や、聞き取りの内容を文字にする仕事などがあります。</p>
+
+    <div class="figure">
+      <img src="photo_B03_1.png" alt="会議や話し合いの音声を、ヘッドホンで聞きながらパソコンで文字にしている、机の上の手元" width="1600" height="900">
+    </div>
+
+    <section class="summary">
+      <div class="summary-title">✓ まとめ</div>
+      <p>文字起こしの仕事を外に頼めるか知りたい時は、相談してみましょう。</p>
+      <a class="btn" href="#">外注について相談する →</a>
+    </section>
+
+    <section>
+      <h2 class="related-title">あわせて読みたい</h2>
+      <ul class="related-list">
+        <li><a href="#">「データ入力」ってどんな仕事？</a></li>
+        <li><a href="#">介護の文字起こし、外注するなら</a></li>
+      </ul>
+    </section>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-nav">
+      <a class="site-name" href="#">お仕事創る</a>
+      <a class="nav-link" href="#">記事一覧</a>
+      <a class="nav-link" href="#">業務から探す</a>
+      <a class="nav-link" href="#">相談</a>
+    </div>
+    <p class="footer-small">このブログの文は、依頼会社が確かめた事実だけで作っています。</p>
+    <p class="footer-small">© お仕事創る</p>
+  </div>
+</footer>
+
+</body>
+</html>
