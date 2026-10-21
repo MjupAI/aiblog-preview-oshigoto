@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>データ入力の外注、依頼の流れと準備</title>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#F5F8FC;color:#1F2A44;font-family:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:16px;line-height:2;overflow-wrap:anywhere}
+a{color:#1D4FC4;text-decoration:none}
+p{margin:0}
+ul,ol{list-style:none;margin:0;padding:0}
+
+.site-header{background:#FFFFFF;border-bottom:1px solid #DCE3EE}
+.site-header-inner{max-width:1040px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.site-name{font-weight:700;font-size:18px;color:#1F2A44;line-height:1.5}
+.site-nav{display:flex;align-items:center;gap:20px}
+.site-nav a.nav-link{color:#1F2A44;font-size:15px;line-height:1.5}
+.btn{display:inline-block;background:#1D4FC4;color:#FFFFFF;border-radius:999px;padding:8px 22px;font-weight:700;line-height:1.6;text-align:center}
+.btn:hover{opacity:.9}
+
+main{padding:32px 16px 48px}
+.sheet{background:#FFFFFF;border:1px solid #DCE3EE;border-radius:16px;max-width:880px;margin:0 auto;padding:40px 40px 48px}
+
+.labels{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.label{display:inline-block;border-radius:999px;padding:0 14px;font-size:14px;line-height:28px;font-weight:700}
+.label-type{background:#1D4FC4;color:#FFFFFF;border:1px solid #1D4FC4}
+.label-line{background:#FFFFFF;color:#1F2A44;border:1px solid #DCE3EE}
+
+h1{font-size:28px;line-height:1.5;margin:0 0 12px}
+.lead{color:#4A5672;margin-bottom:28px}
+
+.toc{background:#F5F8FC;border:1px solid #DCE3EE;border-radius:16px;padding:20px 24px;margin-bottom:36px}
+.toc-title{font-weight:700;margin-bottom:4px}
+.toc li{display:flex;gap:12px;align-items:baseline;border-top:1px solid #DCE3EE}
+.toc li:first-child{border-top:0}
+.toc .num{color:#1D4FC4;font-weight:700}
+
+h2{font-size:22px;line-height:1.6;margin:40px 0 16px;padding:0 0 8px 14px;border-left:4px solid #2F6FEB;border-bottom:1px solid #DCE3EE}
+h3{font-size:16px;font-weight:700;line-height:1.8;margin:24px 0 8px}
+
+.flow{display:flex;flex-direction:column;align-items:stretch}
+.step{display:flex;gap:14px;align-items:flex-start;background:#FFFFFF;border:1px solid #DCE3EE;border-radius:12px;padding:14px 18px}
+.step-num{flex:0 0 36px;width:36px;height:36px;border-radius:50%;background:#1D4FC4;color:#FFFFFF;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1;margin-top:6px}
+.step-body{min-width:0}
+.step-name{font-weight:700;line-height:1.8}
+.step-desc{line-height:1.8}
+.flow-arrow{text-align:center;color:#1D4FC4;font-weight:700;line-height:1.6}
+
+.diagram{display:flex;align-items:stretch;gap:8px}
+.d-box{flex:1 1 0;min-width:0;background:#FFFFFF;border:1px solid #DCE3EE;border-radius:12px;padding:14px 16px}
+.d-name{font-weight:700;line-height:1.8}
+.d-desc{line-height:1.8}
+.d-arrow{flex:0 0 auto;align-self:center;color:#1D4FC4;font-weight:700}
+.d-arrow::before{content:"→"}
+
+table{width:100%;table-layout:fixed;border-collapse:collapse;border:1px solid #DCE3EE}
+th,td{border:1px solid #DCE3EE;padding:10px 12px;text-align:left;vertical-align:top;line-height:1.8;overflow-wrap:anywhere;word-break:break-all}
+thead th{background:#EAF1FE;font-weight:700}
+tbody th{font-weight:700;background:#FFFFFF}
+td{background:#FFFFFF}
+
+.checklist{background:#FFFFFF;border:1px solid #DCE3EE;border-radius:16px;padding:8px 22px}
+.checklist li{display:flex;gap:12px;align-items:baseline;border-top:1px solid #DCE3EE}
+.checklist li:first-child{border-top:0}
+.box{color:#1D4FC4;flex:0 0 auto}
+
+.summary{background:#EAF1FE;border-radius:16px;padding:24px 28px;margin-top:44px}
+.summary-title{color:#1D4FC4;font-weight:700;margin-bottom:6px}
+.summary .btn{margin-top:14px}
+
+.related{margin-top:40px}
+.related-title{font-size:14px;font-weight:700;line-height:1.8;margin-bottom:4px}
+.related li{border-bottom:1px solid #DCE3EE}
+.related a{display:flex;gap:10px;padding:6px 0}
+.related .chev{color:#1D4FC4;font-weight:700}
+
+.site-footer{background:#FFFFFF;border-top:1px solid #DCE3EE}
+.site-footer-inner{max-width:1040px;margin:0 auto;padding:24px 20px 28px}
+.footer-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px}
+.footer-top .site-name{margin-right:8px}
+.footer-top a{color:#1D4FC4;line-height:1.8}
+.footer-small{margin-top:12px;font-size:13px;line-height:1.8;color:#4A5672}
+
+@media (max-width:600px){
+  .nav-link{display:none}
+  main{padding:20px 12px 36px}
+  .sheet{padding:24px 18px 32px}
+  h1{font-size:23px}
+  h2{font-size:20px}
+  .toc{padding:16px 18px}
+  .diagram{flex-direction:column;gap:4px}
+  .d-arrow{align-self:center;line-height:1.6}
+  .d-arrow::before{content:"↓"}
+  th,td{padding:8px 6px}
+  .summary{padding:20px 18px}
+  .summary .btn{display:block}
+  .checklist{padding:6px 16px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-name" href="#">お仕事創る</a>
+    <nav class="site-nav">
+      <a class="nav-link" href="#">記事一覧</a>
+      <a class="nav-link" href="#">業務から探す</a>
+      <a class="btn" href="#">相談</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="sheet">
+    <div class="labels">
+      <span class="label label-type">依頼の流れ</span>
+      <span class="label label-line">介護</span>
+      <span class="label label-line">データ入力</span>
+    </div>
+
+    <h1>データ入力の外注、依頼の流れと準備</h1>
+    <p class="lead">はじめて外に頼む時に、どんな順番で進むのか、何を準備するとよいのかを、図と表で整理します。</p>
+
+    <nav class="toc">
+      <p class="toc-title">この記事の内容</p>
+      <ol>
+        <li><span class="num">01</span><a href="#">依頼の流れ</a></li>
+        <li><span class="num">02</span><a href="#">だれが何をするか</a></li>
+        <li><span class="num">03</span><a href="#">頼む前に比べておくこと</a></li>
+        <li><span class="num">04</span><a href="#">依頼の前のチェックリスト</a></li>
+      </ol>
+    </nav>
+
+    <h2>依頼の流れ</h2>
+    <p>外注は、相談から始まります。少しの量で試してから、やり方を合わせて、続けて頼む形にしていきます。</p>
+
+    <h3>依頼から続けるまで</h3>
+    <div class="flow">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-name">相談する</div>
+          <div class="step-desc">今の作業と困っていることを伝えます。</div>
+        </div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-name">試しに頼む</div>
+          <div class="step-desc">少しの量で、仕上がりを確かめます。</div>
+        </div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-name">やり方を合わせる</div>
+          <div class="step-desc">確かめ方や、やり取りの方法を決めます。</div>
+        </div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-name">続けて頼む</div>
+          <div class="step-desc">量や種類を、少しずつ増やします。</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>だれが何をするか</h3>
+    <div class="diagram">
+      <div class="d-box">
+        <div class="d-name">依頼する会社</div>
+        <div class="d-desc">頼みたい仕事と決まりを伝えます。</div>
+      </div>
+      <span class="d-arrow" aria-hidden="true"></span>
+      <div class="d-box">
+        <div class="d-name">窓口</div>
+        <div class="d-desc">仕事を整理して、作業する人に渡します。</div>
+      </div>
+      <span class="d-arrow" aria-hidden="true"></span>
+      <div class="d-box">
+        <div class="d-name">作業する人</div>
+        <div class="d-desc">決まった手順で仕事を進めます。</div>
+      </div>
+    </div>
+
+    <h2>頼む前に比べておくこと</h2>
+    <p>自分たちで続ける場合と、外に頼む場合では、時間の使い方や進め方が変わります。どちらが合うかを比べておきましょう。</p>
+
+    <h3>自分たちでやる時との違い</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">自分たちでやる</th>
+          <th scope="col">外に頼む</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">使う時間</th>
+          <td>ほかの仕事の時間が減る</td>
+          <td>ほかの仕事に時間を使える</td>
+        </tr>
+        <tr>
+          <th scope="row">進め方</th>
+          <td>その場で決めて進める</td>
+          <td>決まった手順で進める</td>
+        </tr>
+        <tr>
+          <th scope="row">向いている時</th>
+          <td>量が少なく、変わりやすい</td>
+          <td>量が多く、手順が決まっている</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>依頼の前のチェックリスト</h3>
+    <ul class="checklist">
+      <li><span class="box" aria-hidden="true">□</span><span>入力する書類の種類を書き出した</span></li>
+      <li><span class="box" aria-hidden="true">□</span><span>1か月の量の目安を出した</span></li>
+      <li><span class="box" aria-hidden="true">□</span><span>入力する形（表など）を決めた</span></li>
+      <li><span class="box" aria-hidden="true">□</span><span>個人の情報の渡し方を決めた</span></li>
+      <li><span class="box" aria-hidden="true">□</span><span>確かめる人を決めた</span></li>
+    </ul>
+
+    <section class="summary">
+      <p class="summary-title">✓ まとめ</p>
+      <p>流れと準備が分かれば、はじめての外注も進めやすくなります。チェックリストを使って、相談の前に準備しておきましょう。</p>
+      <a class="btn" href="#">外注について相談する <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="related">
+      <p class="related-title">あわせて読みたい</p>
+      <ul>
+        <li><a href="#"><span class="chev" aria-hidden="true">›</span><span>介護のデータ入力、外注するなら</span></a></li>
+        <li><a href="#"><span class="chev" aria-hidden="true">›</span><span>「データ入力」ってどんな仕事？</span></a></li>
+        <li><a href="#"><span class="chev" aria-hidden="true">›</span><span>介護で外注しやすい仕事まとめ</span></a></li>
+      </ul>
+    </section>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-top">
+      <a class="site-name" href="#" style="color:#1F2A44">お仕事創る</a>
+      <a href="#">記事一覧</a>
+      <a href="#">業務から探す</a>
+      <a href="#">相談</a>
+    </div>
+    <p class="footer-small">このブログの文は、依頼会社が確かめた事実だけで作っています。</p>
+    <p class="footer-small">© お仕事創る</p>
+  </div>
+</footer>
+
+</body>
+</html>
